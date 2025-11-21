@@ -1,0 +1,39 @@
+@use "../../variables/general";
+
+header {
+
+  .logo {
+    text-decoration: none;
+    display: inline-block;
+    font-family: general.$secondary-font;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 3rem;
+    color: general.$white-color;
+    background-color: general.$logo-color;
+    padding-inline: .15em;
+    border-radius: .1em;
+    letter-spacing: .05em;
+    vertical-align: middle;
+    text-align: center;
+  }  
+
+  .logo--html {
+    font-weight: 800;
+    margin-left: 1em;
+    line-height: 2.5em;
+  }
+}
+
+
+@media #{general.$tablet-mobile} {
+  .logo__wrapper {
+    margin-inline: auto;
+    text-align: center;
+  
+    .logo--html {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

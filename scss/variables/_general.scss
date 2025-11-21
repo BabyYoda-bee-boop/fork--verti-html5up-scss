@@ -1,0 +1,19 @@
+// * Breakpoints *
+$desktop: "(width > 61em)";
+$mobile: "(width <= 46em)";
+$tablet-portrait: "(46em < width <=61em)";
+$tablet-mobile: "(width <= 61em)";
+
+// * COLORS & FONTS *
+$primary-text-color: #444;
+$secondary-color: #1691c3;
+$background-color: #e4e4e4;
+$logo-color: #fc4887;
+$white-color: #fff;
+$secondary-text: #696969;
+
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "Oleo Script", cursive, serif;
+
+// * General LAYOUT *
+$container-width: 1020px;

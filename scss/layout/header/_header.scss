@@ -1,0 +1,13 @@
+@use "../../variables/general";
+@use "logo";
+@use "nav";
+
+.header--primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 4.5em 3em;
+  color: general.$secondary-text;
+  font-weight: 800;
+  letter-spacing: .025em;
+}

@@ -1,0 +1,27 @@
+@use "../../variables/general";
+@use "sass:math";
+
+$columns: 12;
+$base: math.div(100%, $columns);
+
+.container {
+  width: 100%;
+  max-width: general.$container-width;
+  margin: 0 auto;
+  padding-inline: 1em;
+
+  // * for 12-column layout *
+  .row {
+    display: flex;
+  }
+}
+
+// * 12-column layout *
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: 100%;
+    @media #{general.$desktop} {
+      width: $base * $i;
+    }
+  }
+}

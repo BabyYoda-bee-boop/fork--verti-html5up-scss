@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0"
+    "parcel": "^2.16.1",
+    "scss-reset": "^1.4.6"
   }
 }
