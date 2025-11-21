@@ -1,6 +1,8 @@
 @use "../../variables/general";
+@use "../mixins/mixins";
 
 header {
+  text-align: center;
 
   .logo {
     text-decoration: none;
@@ -15,7 +17,6 @@ header {
     border-radius: .1em;
     letter-spacing: .05em;
     vertical-align: middle;
-    text-align: center;
   }  
 
   .logo--html {
@@ -26,10 +27,9 @@ header {
 }
 
 
-@media #{general.$tablet-mobile} {
+@include mixins.tabletLandscape {
   .logo__wrapper {
     margin-inline: auto;
-    text-align: center;
   
     .logo--html {
       display: block;

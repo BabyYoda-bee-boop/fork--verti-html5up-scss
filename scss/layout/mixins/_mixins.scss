@@ -1,0 +1,22 @@
+@use "../../variables/general";
+
+@mixin desktop-xl {
+  @media #{general.$desktop-xl} {
+    @content;
+  }
+}
+@mixin tabletLandscape {
+  @media #{general.$tablet-landscape} {
+    @content;
+  }
+}
+@mixin tabletPortrait {
+  @media #{general.$tablet-portrait} {
+    @content;
+  }
+}
+@mixin mobile {
+  @media #{general.$mobile} {
+    @content;
+  }
+}

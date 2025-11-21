@@ -1,5 +1,6 @@
 @use "../../variables/general";
 @use "../header/header";
+@use "../banner/banner";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -12,4 +13,5 @@ img {
 body {
   font-family: general.$primary-font;
   background-image: linear-gradient(to bottom, rgb(0 0 0 / 0.05), rgb(0 0 0 / 0)), url("../img/bg01.png");
+  color: general.$primary-text-color;
 }

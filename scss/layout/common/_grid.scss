@@ -19,9 +19,6 @@ $base: math.div(100%, $columns);
 // * 12-column layout *
 @for $i from 1 through $columns {
   .col-#{$i} {
-    width: 100%;
-    @media #{general.$desktop} {
-      width: $base * $i;
-    }
+    width: $base * $i;
   }
 }

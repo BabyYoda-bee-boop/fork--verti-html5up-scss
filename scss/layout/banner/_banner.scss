@@ -1,0 +1,27 @@
+@use "../../variables/general";
+@use "../common/components/buttons";
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  background-color: general.$white-color;
+  border-radius: .35em;
+  box-shadow: 0 3px 0 0px rgb(0 0 0 / 0.05);
+  padding: 4.5em;
+
+  .banner__contents {
+    flex: 1;
+  }
+
+  .banner__title {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  .banner__subtitle {
+    font-size: 2.75em;
+    font-weight: 300;
+    color: general.$secondary-text;
+  }
+}
