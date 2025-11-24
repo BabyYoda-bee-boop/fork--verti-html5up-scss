@@ -1,14 +1,27 @@
 @use "../../variables/general";
+@use "../mixins/mixins";
 @use "sass:math";
 
 $columns: 12;
 $base: math.div(100%, $columns);
 
 .container {
-  width: 100%;
-  max-width: general.$container-width;
+  max-width: 1400px;
+  
+  @include mixins.desktop {
+    max-width: 75em; //1200px
+  }
+  @include mixins.tabletLandscape {
+    max-width: 60em; //960px
+  }
+  @include mixins.tabletPortrait {
+    max-width: 90%;
+  }
+  @include mixins.mobile {
+    max-width: 100%;
+    padding-inline: 1em;
+  }
   margin: 0 auto;
-  padding-inline: 1em;
 
   // * for 12-column layout *
   .row {
@@ -20,5 +33,8 @@ $base: math.div(100%, $columns);
 @for $i from 1 through $columns {
   .col-#{$i} {
     width: $base * $i;
+    @media (general.$tablet-portrait) {
+      width: 100%;
+    }
   }
 }

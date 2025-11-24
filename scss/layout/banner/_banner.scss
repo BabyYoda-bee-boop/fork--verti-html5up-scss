@@ -6,9 +6,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 2em;
-  background-color: general.$white-color;
-  border-radius: .35em;
-  box-shadow: 0 3px 0 0px rgb(0 0 0 / 0.05);
+  background-color: general.$section-bg-color;
+  border-radius: general.$radius-primary;
+  box-shadow: general.$box-shadow;
   padding: 4.5em;
 
   .banner__contents {
@@ -17,11 +17,13 @@
 
   .banner__title {
     font-size: 3em;
-    font-weight: 800;
+    font-weight: general.$fw-8;
+    margin-bottom: 2rem;
   }
   .banner__subtitle {
     font-size: 2.75em;
-    font-weight: 300;
+    line-height: 1.35em;
+    font-weight: general.$fw-3;
     color: general.$secondary-text;
   }
 }

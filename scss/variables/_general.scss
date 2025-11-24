@@ -1,7 +1,7 @@
 // * Breakpoints *
-$desktop-xl: "(width > 105em)";
+$desktop: "(width < 105em)";
 $tablet-landscape: "(width < 80em)";
-$tablet-portrait: "(width < 62em)";
+$tablet-portrait: "(width < 61.25em)";
 $mobile: "(width < 46em)";
 
 // * COLORS & FONTS *
@@ -9,12 +9,23 @@ $primary-text-color: #444;
 $secondary-color: #1691c3;
 $background-color: #e4e4e4;
 $logo-color: #fc4887;
-$white-color: #fff;
+$section-bg-color: #fff;
 $secondary-text: #696969;
 $background-light-grey-clr: #00000016;
 
 $primary-font: "Open Sans", sans-serif;
 $secondary-font: "Oleo Script", cursive, serif;
 
+$fw-3: 300;
+$fw-4: 400;
+$fw-7: 700;
+$fw-8: 800;
+
 // * General LAYOUT *
 $container-width: 1020px;
+$radius-primary: .35em;
+$box-shadow: 0 3px 0 0px rgb(0 0 0 / 0.05);
+
+//* cards *
+$card_primary-gap: 2em;
+$card_text-margin-block: 3em;

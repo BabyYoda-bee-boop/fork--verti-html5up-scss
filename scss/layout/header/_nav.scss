@@ -18,12 +18,12 @@
     transition: background-color, 0.5s, ease;
     
       &:hover {
-        background-color: general.$white-color;
+        background-color: general.$section-bg-color;
         border-radius: 0.5em;
       }
     }
   }
-  @include mixins.tabletLandscape {
+  @include mixins.tabletPortrait {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
 @use "../../variables/general";
 
-@mixin desktop-xl {
-  @media #{general.$desktop-xl} {
+@mixin desktop {
+  @media #{general.$desktop} {
     @content;
   }
 }

@@ -1,0 +1,30 @@
+@use "../../../variables/general";
+
+.intro.row {
+  gap: general.$card_primary-gap;
+  margin-top: general.$card_text-margin-block;
+
+  .intro__card {
+    background-color: general.$section-bg-color;
+    border-radius: general.$radius-primary * 2;
+    overflow: hidden;
+    box-shadow: general.$box-shadow;
+
+    // paddings and margins
+    > * + * {
+      padding-inline: 2.5em;
+      margin-block: general.$card_text-margin-block;
+    }
+    // card children styling
+    img {
+      width: 100%;
+    }
+    .card__wrapper--title {
+      font-size: 1.35em;
+      font-weight: general.$fw-8;
+    }
+    p {
+      font-weight: general.$fw-3 ;
+    }
+  }
+}
