@@ -2,7 +2,7 @@
 @use "../header/header";
 @use "../banner/banner";
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 .visually-hidden {
@@ -31,5 +31,5 @@ body {
 .flex {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }

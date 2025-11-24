@@ -6,6 +6,7 @@ $columns: 12;
 $base: math.div(100%, $columns);
 
 .container {
+  width: 100%;
   max-width: 1400px;
   
   @include mixins.desktop {
@@ -21,19 +22,24 @@ $base: math.div(100%, $columns);
     max-width: 100%;
     padding-inline: 1em;
   }
-  margin: 0 auto;
+  margin-inline:auto;
 
   // * for 12-column layout *
   .row {
     display: flex;
+    flex-wrap: wrap;
+    gap: general.$card_primary-gap;
+    &--no-gap {
+      gap: 0;
+    }
   }
 }
 
 // * 12-column layout *
 @for $i from 1 through $columns {
   .col-#{$i} {
-    width: $base * $i;
-    @media (general.$tablet-portrait) {
+    width: calc(($base * $i) - (general.$card_primary-gap * ($columns / $i - 1)) / ($columns / $i));
+    @media #{general.$tablet-portrait} {
       width: 100%;
     }
   }

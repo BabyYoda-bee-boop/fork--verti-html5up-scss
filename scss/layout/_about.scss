@@ -1,0 +1,51 @@
+@use "../variables/general";
+@use "../layout/mixins/mixins";
+
+.about {
+  background-color: general.$section-bg-color;
+  padding: 5em;
+  margin-block: general.$card_text-margin-block;
+  box-shadow: general.$box-shadow;
+
+  .flex {
+    gap: general.$card_primary-gap * 2;
+
+    .sidebar {
+
+      h4 {font-size: 1.35em; font-weight: general.$fw-8;}
+
+      .row {
+        gap: general.$card_primary-gap / 1.8;
+        margin-block: 1.5em 3em;
+
+        .sidebar__img {
+          border-radius: .6em;
+          overflow: hidden;
+        }
+      }
+    }
+    .article__about {
+      max-width: 65%;
+
+      .article__title {
+        font-size: 2.25em;
+        font-weight: general.$fw-8;
+      }
+
+      .article__subtitle {
+        font-weight: general.$fw-3;
+        color: general.$secondary-text;
+        margin-block: 2em;
+
+        span {
+          font-weight: general.$fw-6;
+          color: general.$primary-text-color;
+        }
+      }
+    }
+
+    @include mixins.tabletPortrait {
+      flex-direction: column;
+    }
+  }
+}
