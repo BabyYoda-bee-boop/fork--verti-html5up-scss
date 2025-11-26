@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Verti</title>
+    <script src="https://kit.fontawesome.com/c967963a3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
@@ -29,14 +30,14 @@
             <!-- e: navigation -->
         </header><!-- e: header-->
         <!-- banner -->
-         <div class="banner">
-            <div class="banner__contents">
+         <div class="banner row row--no-gap">
+            <div class="banner__contents col-7">
                 <h1 class="banner__title">Hi. This is Verti.</h1>
                 <p class="banner__subtitle">It's a free responsive site template by HTML5 UP</p>
             </div>
-            <div class="banner__buttons btn__wrapper">
-                <a href="#" class="btn btn--large btn--primary">Ok let's go<span></span></a>
-                <a href="#" class="btn btn--large btn--secondary">More info<span></span></a>
+            <div class="banner__buttons btn__wrapper col-4">
+                <a href="#" class="btn btn--large btn--primary icon fa-circle-arrow-right">Ok let's go<span></span></a>
+                <a href="#" class="btn btn--large btn--secondary icon fa-circle-question">More info<span></span></a>
             </div>
          </div>
         <!-- e: banner -->
@@ -82,7 +83,7 @@
                         <a href="#" class="sidebar__img col-6"><img src="img/pic06.jpg" alt="Mountaintops"></a>
                         <a href="#" class="sidebar__img col-6"><img src="img/pic07.jpg" alt="Big black rocks laying in a grass field"></a>
                     </div>
-                    <a href="#" class="sidebar__btn btn btn--primary btn--small">More</a>
+                    <a href="#" class="sidebar__btn btn btn--primary btn--small icon fa-file-lines">More</a>
                 </aside>
                 <article class="article__about">
                     <h3 class="article__title">So what's this all about?</h3>
@@ -92,10 +93,68 @@
                     <p class="article__subtitle">
                         Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.
                     </p>
-                    <a href="#" class="btn btn--primary btn--small">Continue reading</a>
+                    <a href="#" class="btn btn--primary btn--small icon fa-circle-arrow-right">Continue reading</a>
                 </article>
             </div>
         </section>
-        <!--e: section ABOUT -->
+        <!-- e: section ABOUT -->
+        <!-- footer -->
+         <section class="container footer">
+            <div class="row">
+                <div class="footer__column col-3">
+                    <h4 class="footer__column--title">Random Stuff</h4>
+                    <ul class="footer__column--list">
+                        <li class="list__item"><a href="#">Etiam feugiat condimentum</a></li>
+                        <li class="list__item"><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                        <li class="list__item"><a href="#">Sed porttitor cras in erat nec</a></li>
+                        <li class="list__item"><a href="#">Felis varius pellentesque potenti</a></li>
+                        <li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column col-3">
+                    <h4 class="footer__column--title">Random Stuff</h4>
+                    <ul class="footer__column--list">
+                        <li class="list__item"><a href="#">Etiam feugiat condimentum</a></li>
+                        <li class="list__item"><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                        <li class="list__item"><a href="#">Sed porttitor cras in erat nec</a></li>
+                        <li class="list__item"><a href="#">Felis varius pellentesque potenti</a></li>
+                        <li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column col-3">
+                    <h4 class="footer__column--title">Random Stuff</h4>
+                    <ul class="footer__column--list">
+                        <li class="list__item"><a href="#">Etiam feugiat condimentum</a></li>
+                        <li class="list__item"><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                        <li class="list__item"><a href="#">Sed porttitor cras in erat nec</a></li>
+                        <li class="list__item"><a href="#">Felis varius pellentesque potenti</a></li>
+                        <li class="list__item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us col-3">
+                    <h4 class="contact-us__title">Contact Us</h4>
+                    <div class="contact-us__icons" aria-label="Social media links">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <address class="contact-us__address">
+                        1234 Fictional Road<br>
+                        Nashville, TN 00000<br>
+                        (800) 555-0000
+                    </address>
+                </div>
+            </div>
+            <div class="copy">
+                <ul class="flex">
+                    <li>&copy; Untitled. All rights reserved</li>
+                    <li>Demo Design: <a href="https://html5up.net/">HTML5 UP</a></li>
+                    <li>Images: <a href="https://unsplash.com/">Unsplash</a></li>
+                </ul>
+            </div>
+         </section>
+        <!-- e: footer -->
 </body>
 </html>

@@ -4,7 +4,7 @@
 .about {
   background-color: general.$section-bg-color;
   padding: 5em;
-  margin-block: general.$card_text-margin-block;
+  margin-block: general.$card_text-margin-block 0;
   box-shadow: general.$box-shadow;
 
   .flex {
@@ -47,5 +47,19 @@
     @include mixins.tabletPortrait {
       flex-direction: column;
     }
+  }
+}
+
+//Font Awesome
+.about {
+  .fa-file-lines::before {
+    display: inline-block;
+    font-weight: 400;
+    padding-right: .6em;
+  }
+
+  .fa-circle-arrow-right::before {
+    display: inline-block;
+    padding-right: .6em;
   }
 }

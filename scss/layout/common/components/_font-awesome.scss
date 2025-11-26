@@ -1,0 +1,21 @@
+// Font Awesome
+.icon::before,
+.icon::after {
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 7 Free";
+  font-size: 1.2em;
+}
+
+.fa-circle-arrow-right::after,
+.fa-circle-arrow-right::before {
+  content: "\f0a9";
+}
+.fa-circle-question::after,
+.fa-circle-question::before {
+ content: "\f059";
+}
+.fa-file-lines::before {
+  content: "\f15c";
+}

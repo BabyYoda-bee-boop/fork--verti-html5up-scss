@@ -1,19 +1,15 @@
 @use "../../variables/general";
 @use "../common/components/buttons";
+@use "../common/components/font-awesome";
 
 .banner {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  gap: 0;
   background-color: general.$section-bg-color;
   border-radius: general.$radius-primary;
   box-shadow: general.$box-shadow;
   padding: 4.5em;
-
-  .banner__contents {
-    flex: 1;
-  }
 
   .banner__title {
     font-size: 3em;
@@ -25,5 +21,21 @@
     line-height: 1.35em;
     font-weight: general.$fw-3;
     color: general.$secondary-text;
+  }
+}
+
+//font awesome
+.banner__buttons {
+  .fa-circle-arrow-right,
+  .fa-circle-question {
+    position: relative;
+    width: 100%;
+  }
+  .fa-circle-arrow-right::after,
+  .fa-circle-question::after {
+    position: absolute;
+    display: inline-block;
+    right: .5em;
+    padding-left: 1em;
   }
 }

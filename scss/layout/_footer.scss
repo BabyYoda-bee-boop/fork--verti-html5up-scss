@@ -1,0 +1,53 @@
+@use "../variables/general";
+
+.footer {
+  padding-block: general.$card_text-margin-block * 2.5;
+  font-weight: general.$fw-3;
+  h4 {
+    font-size: 1.35em;
+    font-weight: general.$fw-8;
+    margin-bottom: general.$card_text-margin-block / 2.5;
+  }
+
+  a {
+    color: general.$secondary-text;
+  }
+  .contact-us__icons {
+      i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      color: #fff;
+      background-color: general.$icon-bg-clr;
+      border-radius: general.$radius-primary;
+      width: 40px;
+      aspect-ratio: 1;
+      opacity: .75;
+      margin-right: .2em;
+      margin-bottom: general.$card_text-margin-block / 2.5;
+    }
+  }  
+}
+
+.copy {
+  padding-block: 3em 0;
+
+  &, & a {
+    color: lighten(general.$secondary-text, 30%);
+  }
+  
+  ul {
+    justify-content: center;
+
+    li {
+      padding-inline: 1em;
+      line-height: 2;
+
+      &:not(:last-of-type) {
+        border-right: 1px solid currentColor;
+        border-right-color: color-mix(in srgb, currentColor, white 70%);
+      }
+    }
+  }
+}

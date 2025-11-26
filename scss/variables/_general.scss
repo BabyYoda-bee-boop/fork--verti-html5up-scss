@@ -1,8 +1,8 @@
 // * Breakpoints *
-$desktop: "(width < 105em)";
-$tablet-landscape: "(width < 80em)";
-$tablet-portrait: "(width < 61.25em)";
-$mobile: "(width < 46em)";
+$desktop: "(max-width: 105em)";
+$tablet-landscape: "(max-width: 80em)";
+$tablet-portrait: "(max-width: 61.25em)";
+$mobile: "(max-width: 46em)";
 
 // * COLORS & FONTS *
 $primary-text-color: #444;
@@ -12,6 +12,7 @@ $logo-color: #fc4887;
 $section-bg-color: #fff;
 $secondary-text: #696969;
 $background-light-grey-clr: #00000016;
+$icon-bg-clr: #222;
 
 $primary-font: "Open Sans", sans-serif;
 $secondary-font: "Oleo Script", cursive, serif;
